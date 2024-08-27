@@ -1,0 +1,148 @@
+/* Responsive Card Main */
+.card-main {
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.card-main h1 {
+    font-size: 2.5rem; /* Adjusted for better responsiveness */
+    text-align: center;
+    border-bottom: 5px solid red;
+    width: 75%; /* Adjusted for better alignment on larger screens */
+    margin: 20px auto; /* Added top and bottom margin for spacing */
+}
+
+.project-detail {
+    display: flex;
+    flex-direction: row; /* Side by side on larger screens */
+    width: 90%; /* Adjusted for better responsiveness */
+    max-width: 1200px; /* Added max-width to limit expansion on larger screens */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 50px auto;
+    box-shadow: 0px 0px 50px grey;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+.project-img, .project {
+    flex: 1; /* Each takes up 50% of the width */
+}
+
+.project-img {
+    overflow: hidden;
+    position: relative; /* Position relative for absolute positioning of desc */
+}
+
+.project-img img {
+    width: 100%; /* Ensure image covers the container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block display to avoid extra space below image */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project-img .desc {
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    position: absolute; /* Position absolutely within project-img */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Center text vertically and horizontally */
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+.project h2{
+    color: #039fff;
+    border-bottom: 1px solid #039eff79;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.desc{
+    flex-direction: column;
+}
+.desc a, .desc button{
+    cursor:help;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    
+}
+.desc button{
+    background-color: #039fff;
+    border: none;
+    transition: all 0.2s ease;
+}
+.desc button:hover{
+    scale: 1.1;
+    background-color: white;
+}
+.project-img:hover .desc {
+    opacity: 1; /* Show description on hover */
+}
+
+.project-img:hover img {
+    opacity: 0; /* Hide image on hover */
+}
+
+.project {
+    padding: 30px;
+}
+
+.project p {
+    padding: 20px 0px;
+    text-align: justify;
+}
+.project h3{
+    color: #039fff;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #039eff79 ;
+    width: 17%;
+}
+.project span {
+    font-size: 1rem;
+    background-color: rgb(50, 49, 49);
+    color: white;
+    display: inline-block;
+    padding: .75rem 1rem;
+    margin: 5px;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project-detail {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+
+    .project-img, .project {
+        width: 100%; /* Full width on smaller screens */
+    }
+    
+    .project-img img {
+        width: 100%; /* Ensure image fits the container width */
+    }
+}
+.project h3{
+    width: 30%;
+}
+@media (max-width: 480px) {
+    .card-main h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        width: 90%; /* Ensure header fits well on small screens */
+    }
+    
+    .project-detail {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+}

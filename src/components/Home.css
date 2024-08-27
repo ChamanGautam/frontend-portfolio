@@ -1,0 +1,82 @@
+/* Customize your styles here */
+.details-container {
+  text-align: center;
+  background-image: url('../img/bg3.jpg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure background image covers the container */
+  color: white;
+  margin: auto;
+  height: 700px; /* Fixed height, adjust as necessary */
+  display: flex; /* Use flexbox for centering */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.maindiv {
+  text-align: center;
+  padding: 20px; /* Added padding for better spacing */
+  color: white;
+  position: relative;
+  z-index: 1; /* Ensure content is above the background */
+}
+
+.maindiv h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.maindiv div {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.maindiv span {
+  font-size: 1.6rem;
+  color: #039fff;
+}
+
+.maindiv button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #039fff;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none; /* Ensure button has no border */
+  transition: transform 0.5s ease-in-out; /* Simplify transition for consistency */
+}
+
+.maindiv button a {
+  text-decoration: none;
+  color: white;
+}
+
+.maindiv button:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .maindiv {
+    padding: 10px;
+  }
+
+  .maindiv h1 {
+    font-size: 2.5rem;
+  }
+
+  .maindiv div {
+    font-size: 1rem;
+  }
+
+  .maindiv span {
+    font-size: 1.2rem;
+  }
+
+  .maindiv button {
+    padding: 8px 16px; /* Adjusted padding for smaller screens */
+    font-size: 1rem; /* Adjusted font size for smaller screens */
+  }
+}

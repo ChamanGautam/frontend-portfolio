@@ -1,0 +1,135 @@
+/* About.css */
+
+.about-sec {
+  padding: 20px;
+  background-color: black;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-sec h1 {
+  font-size: 4rem;
+  text-align: center;
+  border-bottom: 5px solid #007BFF;
+  width: 75%; /* Adjusted for better alignment */
+  margin: 0 auto 20px; /* Centered and added bottom margin */
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about, .skill {
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3); /* Reduced opacity for better visibility */
+}
+
+.about h2, .skill h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color:#007BFF;
+}
+
+.about p {
+  font-size: 1rem; /* Adjusted for better readability */
+  line-height: 1.3;
+}
+.about span{
+  font-size: 1.1rem;
+  color:#007BFF;
+}
+.about p p{
+  font-size: 1.3rem;
+  color: #00ff55;
+}
+
+.skill h2 {
+  text-align: center;
+ 
+}
+
+.skill span {
+  text-align: center;
+  display: block; /* Changed to block for better alignment */
+  font-size: 1.25rem; /* Adjusted for consistency */
+  background-color: rgb(85, 83, 83);
+  width: fit-content; /* Adjusted width for content fitting */
+  margin: 5px auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 110px;
+}
+.sk {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.btn {
+  width: 30%;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list span {
+  background-color: #e1e1e1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.875rem; /* Adjusted for readability */
+}
+@media (min-width: 768px) {
+  .container {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .about, .skill {
+      flex: 1;
+      margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-sec {
+      padding: 15px;
+  }
+
+  .btn {
+      width: 100%;
+      margin-top: 15px;
+  }
+
+  .skills-list span {
+      flex: 1 1 calc(50% - 10px); /* Two items per row */
+      text-align: center;
+  }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Dr. Ashish Verma Child Care Center",
+        "description": "The Dr.Ashish verma child care Clinic Management System, built with the MERN stack (MongoDB, Express.js, React.js, Node.js), offers a comprehensive solution for managing clinic operations. Patients can easily book, reschedule, or cancel appointments through a user-friendly interface, while the admin panel provides a centralized dashboard for viewing and managing all appointments and patient feedback. This system ensures efficient scheduling, streamlined administrative tasks, and enhanced patient communication, all within a secure and scalable platform.",
+        "tools": [
+            "Node.JS",
+            "React.JS",
+            "Express.JS",
+            "MongoDB",
+            "CSS",
+            "Bootstrap"
+        ],
+        "image": "clinic",
+        "link":"https://drashishverma.netlify.app/"
+    },
+    {
+        "id": 2,
+        "title": "Student Management System",
+        "description": "The Student Management System, developed using the MERN stack (MongoDB, Express.js, React.js, Node.js), provides an efficient and scalable solution for managing student data. It features an intuitive interface for tracking student enrollment, Administrators can easily manage student records, generate reports, and monitor academic progress through a centralized dashboard. The system ensures secure data handling and seamless user experiences across devices, making it ideal for educational institutions seeking a modern, comprehensive management tool.",
+        "tools": [
+            "Node.JS",
+            "React.JS",
+            "Express.JS",
+            "MongoDB",
+            "CSS",
+            "Bootstrap"
+        ],
+        "image": "student",
+        "link":"https://kmclu.netlify.app/"
+    }
+]
